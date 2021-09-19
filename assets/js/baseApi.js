@@ -13,7 +13,6 @@ $.ajaxPrefilter(function(options) {
     //不论成功还是失败都会调用这个函数
     options.complete = function(res) {
         //在回调中可以使用responseJSON拿到服务器响应的数据
-        console.log(res);
         if (res.responseJSON.status === 1) {
             //强制清空token
             localStorage.removeItem('token');
