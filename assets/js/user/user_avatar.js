@@ -52,7 +52,7 @@ $(function() {
             },
             success: function(res) {
                 if (res.status !== 0) {
-                    return layer.msg('更换头像失败')
+                    return layer.msg('更换头像失败');
                 }
                 layer.msg('更换头像成功');
                 window.parent.getUserInfo();
